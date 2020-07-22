@@ -2,11 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>EurokonkreteCom</title>
-  <base href="/CraigHarold.github.io/">  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Euro Konkrete</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Web and UI Developer">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="./manifest.json">
 <link rel="stylesheet" href="styles.09e2c710755c8867a460.css"></head>
 <body>
+	<script>
+		(function () {
+		  // Retrieve the URL the user was trying to access when receiving the 404.
+		  var redirect = sessionStorage.redirect;
+		  // Remove the URL from sessionStorage.
+		  delete sessionStorage.redirect;
+		  // Check if we actually need to redirect.
+		  if (redirect && redirect != location.href) {
+			// We need to redirect to the URL the user was trying to access.
+			history.replaceState(null, null, redirect);
+		  }
+		})();
+	</script>
   <app-root></app-root>
 <script src="runtime.e227d1a0e31cbccbf8ec.js" defer></script><script src="polyfills.a4021de53358bb0fec14.js" defer></script><script src="main.d747349679e0b088d7d8.js" defer></script></body>
 </html>
