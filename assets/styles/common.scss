@@ -161,6 +161,10 @@
 }
 
 @media screen and (max-width: 991px) {
+    
+    #content{
+        padding-top: 10%;
+    }
     .navbar{
         background-color: $nav-background;
         padding: 8px 16px;
