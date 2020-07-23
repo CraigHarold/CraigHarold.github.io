@@ -42,6 +42,21 @@
 
 }
 
+.footer{
+  height: 40px;
+  background-color: #272727 !important;
+  text-align: center !important;
+  span{
+    font-size: 12px !important;
+    margin: 0;
+    a{
+      font-size: 12px !important;
+      text-decoration: underline;
+      color: $base;
+    }
+  }
+}
+
 ul.ml-auto {
   margin: 8px;
 }
