@@ -30,10 +30,16 @@
     display: inline-block;
     cursor: pointer;
     padding: 8px 14px;
-    &:focus,
-    &:hover {
-      background: hsla(0,0%,100%,.15);
-    }
+    // &:focus,
+    // &:hover {
+    //   background: hsla(0,0%,100%,.15);
+    // }
+  }
+  
+  .nav-link:focus,
+  .nav-link:hover,
+  .nav-link.active {
+    background: hsla(0,0%,100%,.15);
   }
 
   .nav-link:hover::after {
@@ -46,9 +52,9 @@
   height: 40px;
   background-color: #272727 !important;
   text-align: center !important;
-  span{
+  p{
     font-size: 12px !important;
-    margin: 0;
+    margin: 0 auto;
     a{
       font-size: 12px !important;
       text-decoration: underline;
