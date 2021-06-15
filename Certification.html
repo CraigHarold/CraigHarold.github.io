@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>EURO KONKRETE</title>
+        
+<!-- 
+
+Sentra Template
+
+http://www.templatemo.com/tm-518-sentra
+
+-->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,600i,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/certification.css"> 
+        <link rel="stylesheet" href="css/product.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css'> 
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        
+    </head>
+    <style>
+   
+
+
+
+
+        </style>
+<body>
+
+
+        <header class="nav-down responsive-nav hidden-lg hidden-md">
+            <div class="logo">
+                <img src="img/euro_logo.png" alt="Responsive image" width="120px" >
+            </div>
+            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav" style="margin-left:120px;">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <!--/.navbar-header-->
+            <div id="main-nav" class="collapse navbar-collapse" style="margin-top:-60px;">
+                <nav>
+                    <ul  class="nav navbar-nav" >
+                        
+                        <li><a onclick="Home()" href='#'>Home Page</a></li>
+                        <li class='sub-menu'><a href='#message'>About Us <div class='fa fa-caret-down right'></div></a>
+                            <ul style="margin-left:-1px;">
+                                <li><a onclick="Pudlo()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>PME Group</a></li>
+                                <li><a onclick="Featured()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>PME Team</a></li>
+                                <li><a onclick="Blog()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>David Ball Group </a></li>
+                                <li><a onclick="Featured1()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>DBG Team</a></li>
+                          </ul>
+                        </li>
+                        <li class='sub-menu'><a href="#">Products<div class='fa fa-caret-down right'></div></a>
+                            <ul style="margin-left:-1px;">
+                                <li><a onclick="Video()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>What is Pudlo</a></li>
+                                <li><a onclick="Performaince()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Product Performance </a></li>
+                                <li><a onclick="Application()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Applications</a></li>
+                                <li><a onclick="Downloads()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Downloads</a></li>
+                            </ul>
+                        </li>
+                        <li class='sub-menu'><a href='#message'>Testimonials<div class='fa fa-caret-down right'></div></a>
+                            <ul style="margin-left:-1px;font-size:5px;">
+                                <li><a href="#services" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Services</a></li>
+                                <li><a href="#certifications" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Certifications</a></li>
+                                <li><a href="#casestudys" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Case Studies</a></li>
+                         </ul>
+                        </li>
+                        
+                        
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <header class='animated bounceInDown'>
+        <div  class=" sidebar-navigation hidde-sm hidden-xs">
+            <div class="logo">
+                <img src="img/euro_logo.png" alt="" width="180px" class="ml-3 mt-10">
+            </div>
+            
+            <nav >
+                <ul>
+                    <li><a onclick="Home()" href='#'>Home Page</a></li>
+                    <li class='sub-menu'><a href='#message'>About Us <div class='fa fa-caret-down right'></div></a>
+                        <ul style="margin-left:-1px;">
+                            <li><a onclick="Pudlo()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>PME Group</a></li>
+                            <li><a onclick="Featured()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>PME Team</a></li>
+                            <li><a onclick="Blog()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>David Ball Group </a></li>
+                            <li><a onclick="Featured1()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>DBG Team</a></li>
+                      </ul>
+                    </li>
+                    <li class='sub-menu'><a href="#">Products<div class='fa fa-caret-down right'></div></a>
+                        <ul style="margin-left:-1px;">
+                            <li><a onclick="Video()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>What is Pudlo</a></li>
+                            <li><a onclick="Performaince()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Product Performance </a></li>
+                            <li><a onclick="Application()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Applications</a></li>
+                            <li><a onclick="Downloads()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Downloads</a></li>
+                        </ul>
+                    </li>
+                    <li class='sub-menu'><a href='#message'>Testimonials<div class='fa fa-caret-down right'></div></a>
+                        <ul style="margin-left:-1px;font-size:5px;">
+                            <li><a href="#services" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Services</a></li>
+                            <li><a href="#certifications" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Certifications</a></li>
+                            <li><a href="#casestudys" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Case Studies</a></li>
+                     </ul>
+                    </li>
+            </nav>
+            
+        </div>
+    </header>
+<!------------------------------About Us------------------------------------------------------------->
+<div class="page-content">
+
+    <div class="w-100">
+        <div class="row "style="background-image: url('img/Slide3.jpg');height:300px;background-size: cover;" >
+            <hr class="new5" style="margin-left:50px;margin-top:120px;" >
+        <h1 class="page-head-text">Testimonials </h1>
+    </div>  </div>  
+
+
+<!------------------------------------------------------------------------------->
+<section id="services" class="content-section" style="background-color: white;">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="section-heading" >
+                <h1><em >SERVICES</em></h1>
+            </div>
+           </div>
+           <div class="column2">
+              <div class="card2">
+              <h3>TECHNICAL EXPERTISE & SUPPORT  </h3>
+              <p>PUDLO: a proven product; a superior service. When you buy PUDLO you don’t just get the best performing waterproofing additive on the market, you also get Quality Assurance and support from a dedicated team of experts.</p>
+              <P> PUDLO's reputation is built on the fact that nothing is left to chance. More than a product, PUDLO is a partnering scheme. Product application is backed by technical consultation and quality inspection, from design concept to building handover.  </P><br> </div>
+          </div>
+          <div class="column2">
+              <div class="card2">
+                <h3>OPERATIONS </h3>
+                <p>The production and execution of PUDLO treated concrete are carefully monitored by qualified concrete technologies and site inspectors. PUDLO concrete technologists are highly qualified and experienced in the cement and concrete technology, capable to provide valuable technical advice. </p>
+                <P>As our customers and partners, you have the privilege of approaching our technical experts when facing with waterproofing or other concrete issues. Our existing customers and partners have shown appreciation and satisfaction to our sincerity and dedication for assisting them in solving and troubleshooting the technical problems that they were facing. </P>
+                <p>All technical advice related to concrete and concrete technology, construction method and waterproofing are provided at no additional cost. However, PUDLO Middle East and its associated companies should not be held responsible for any direct or indirect loss of property, time, resources, money or human life due to this service. </p>
+                <br> </div>
+            </div>
+            <div class="column2">
+                <div class="card2">
+                  <h3>CPD TRAINING</h3>
+                  <p>CPD Seminar - Chemical attacks on the durability of underground structures in the Middle East. </p>
+                  <P>PUDLO has been advancing the performance of waterproof, durable concrete for over 140 years. PUDLO is the complete, sustainable solution to creating waterproof, durable concrete.</p>
+                  <p>From concept to hand-over, PUDLO is exclusively dedicated to the engineering of membrane-free waterproof concrete.
+                </p>
+                <p>This CPD will provide a description of the mechanism of the permeation properties of concrete and how it affects the concrete durability. Description of different types of chemical attacks of concrete mainly common in the Middle East and the way to mitigate them.</p>
+                 <P>This CPD has been certified by the CPD Certification Service and you gain either 1 or 2 hours depending on time availability.</P>
+                  <P>  Please contact our office to arrange a presentation at your office on +971 555 1377 992 or fill out the enquiry form to the right.This CPD has been certified by the CPD Certification Service and you gain either 1 or 2 hours depending on time availability. </P> <br> 
+                </div>
+              </div>    
+        </div>
+    </section>
+<!---------------------------------------------------------------------------------------->
+
+<section id="certifications" class="content-section">
+    <div class="section-heading">
+        <h1><br><em> CERTIFICATE </em></h1>
+       
+    </div>
+    <div class="section-content">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="image">
+                    <img src="img/cer1.jpg" alt="">
+                   
+                </div>
+                
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="img/cer2.jpg" alt="">
+                    
+                </div>
+               
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="img/cer3.jpg" alt="">
+                    
+                </div>
+                
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="img/cer4.jpg" alt="">
+                   
+                </div>
+                
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="img/cer5.jpg" alt="">
+                   
+                </div>
+                
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="img/cer1.jpg" alt="">
+                    
+                </div>
+                
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="img/cer2.jpg" alt="">
+                   
+                </div>
+               
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="img/cer3.jpg" alt="">
+                   
+                </div>
+                
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="img/cer4.jpg" alt="">
+                   
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!-------------------------------------------------------------------------------------------------->
+
+<section id="casestudys" class="content-section" >
+    <div class="section-heading">
+        <h1><em >CASE STUDIES </em></h1>
+    </div>
+    <div class="section-content">
+        <div class="owl-carousel owl-theme">
+            <div class="item" >
+                <div class="image">
+                    <img src="img/ca1.jpg" width="50%" height="200px;" alt="">
+                    <div class="featured-button button">
+                        <a href="#projects">A New Tourist Destination </a>
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h4>Maktoum Hospital Redevelopment Phase II  </h4>
+                  <span>A New Tourist Destination</span>
+                    <p>The Maktoum Hospital Redevelopment project is a new tourist and shopping destination
+                        due to be constructed at the site of the original Maktoum hospital in Deira, Dubai.
+                        modified concrete was the trusted choice of the consultant to be used for Phase II of the redevelopment project. The project consists of three towers with two basements to be used as car parks. Almost 40,000m' of waterproof concrete was used in the 
+                        basement raft and wall to make it watertight. </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="img/ca2.jpg" width="50%" height="200px;" alt="">
+                    <div class="featured-button button">
+                        <a href="#projects">An Exclusive Development </a>
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h4>Manarat Lusail, Qatar  </h4>
+                   <span>An Exclusive Development</span>
+                    <p>Manarat Lusail is a mbced-use development located in the unique Lusail City of Qatar. Lusail City will be home to 200,000 residents living on one of the four exclusive manmade islands or in one of the mixed multi-purpose residential areas.The project consists of two basements and 36 storeys of mixed-use development. waterproof concrete has been used in the more critical areas of the basement walls to provide durability	and	watertightness	as	the 
+                        development is situated adjacent to the sea.
+                        </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="img/ca3.jpg" width="50%" height="200px;" alt="">
+                    <div class="featured-button button">
+                        <a href="#projects">Urban Residence </a>
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h4>Mont Rose Residential Development   </h4>
+                  <span>Urban Residence</span>
+                    <p>Mont Rose will be one of the most exclusive gated urban upscale residences in Dubai, offering two residential towers and one hotel apartment. Located in Du Biotech, each tower contains three basements and is 19 storeys high.
+                        Waterproof concrete is used on the raft slab to provide protection against water ingress and to enhance the durability of the structure.
+                        </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="img/ca4.jpg" width="50%" height="200px;" alt="">
+                    <div class="featured-button button">
+                        <a href="#projects">Prestigious Project</a>
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h4> Etihad Museum </h4>
+                    <span>Prestigious Project</span>
+                    <p>Etihad Museum is a unique and iconic museum exhibiting the holistic story of the nation's development from pre-union throughout the full time span of unity. The project location has historical context, located adjacent to Union House, the location of the signing of the 1971 agreement between the Trucial States, which led to the formation of the United Arab Emirates.
+                        More than 6,000m5 of	waterproof concrete has been used to enhance the durability
+                        and watertightness of this prestigious project
+                        </p>
+                </div>
+            </div>
+           
+            <div class="item">
+                <div class="image">
+                    <img src="img/ca5.jpg" width="50%" height="200px;" alt="">
+                    <div class="featured-button button">
+                        <a href="#projects">Engineering Feat </a>
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h4>Dubai Fountain </h4>
+                   <span>Engineering Feat</span>
+                    <p>When Emaar unveiled the Dubai Fountains, it had created yet another visually dynamic feat of engineering to enrich Dubai's iconic landscape. The world's tallest performing fountains, they are a dazzling fusion of water, light and music designed by California-based WET, the creators of the Fountains of Bellagio in Las Vegas.
+                        Powerful mechanisms shoot jets of water as high as 1S0 metres, equivalent to a 50-storey building, keeping 22,000 gallons of water airborne at any one time. Over 6,600 lights and SO colour projectors create a palette of over 1,OCO different light displays synchronized with classical, Arabic and world music.
+                        </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="img/ca6.jpg" width="50%" height="200px;"  alt="">
+                    <div class="featured-button button">
+                        <a href="#projects">Style and Function</a>
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h4>Yas Marina Development </h4>
+               <span>Style and Function</span>
+                    <p>The Yas Marina Viceroy Hotel is the perfect combination of style and function. The construction of this iconic five star hotel straddles Abu Dhabi's Formula I racetrack and is cloaked with an illuminated 'grid shell' to provide energy efficiency and create a striking landmark.The development is a five star signature hotel built alongside and over the Yas Marina Racing Circuit, developed by Aldar, designed by New York's Asymptote and built by Al Futtaim Carillion 1.1C with the support of more than 70 specialist subcontractors from around the world.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="img/ca7.jpg" width="50%" height="200px;" alt="">
+                    <div class="featured-button button">
+                        <a href="#projects">Flagship Devlopment</a>
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h4>Legoland and Water Park </h4>
+                    <span>Flagship Devlopment</span>
+                    <p>When complete in 2016, Dubai Parks and Resorts will become the Middle East's largest multi themed leisure and entertainment destination, comprising three separate theme parks and one water park. Besides the first LEGOLAND theme park in the Middle East and LEGOLAND Water Park, the park will also showcase the first-of-its-kind entertainment. destination of Bollywood movie experience in its Bollywood Parks. waterproof admixture has been chosen for all underground and water-retaining ructures, including foundation elements of Water Parks to provide durability and watertightness to the structures. More than 15,000m3 of PUDLO modified concrete is to be used for this project which is currently under construction.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+
+
+        
+<!------------------------------------------------------------------------>
+    
+<div class="live-chat-widget">
+    <button class="live-chat-button" href="#">
+        <img src="img/linkedin.png" alt="Responsive image" width="80px" >
+        <g>
+          <path d="M19.6906034,42 L16.0186034,42 L16.0186034,38.191 C16.8225403,39.8075313 18.1045912,41.1374148 19.6906034,42 L19.6906034,42 Z M32.8906034,28.823 L24.1056034,28.823 C21.2769557,28.8623314 19.0045252,31.1665788 19.0045252,33.9955 C19.0045252,36.8244212 21.2769557,39.1286686 24.1056034,39.168 L32.8906034,39.168 C35.7192772,39.1297774 37.9926152,36.8264042 37.993709,33.9974724 C37.9948028,31.1685406 35.7232468,28.86341 32.8946034,28.823 L32.8906034,28.823 Z M33.0956034,41.987 L23.9026034,41.987 C19.5238896,41.9380177 16,38.3744878 16,33.9955 C16,29.6165122 19.5238896,26.0529823 23.9026034,26.004 L33.0956034,26.004 C37.4743172,26.0529823 40.9982068,29.6165122 40.9982068,33.9955 C40.9982068,38.3744878 37.4743172,41.9380177 33.0956034,41.987 L33.0956034,41.987 L33.0956034,41.987 Z"/>
+          <path d="M43.3348891,38 L47.002,38 L47.002,34.1886179 C46.1991335,35.8061602 44.9187896,37.1368753 43.3348891,38 Z M41.2376851,37.6797999 C41.736668,36.5164423 41.9948731,35.2637362 41.9966732,33.9974984 C42.1202003,29.1577393 38.308152,25.1322451 33.4780304,25.0018762 L23.75,25.0018762 C25.2367988,23.1081124 27.5080185,22.0018071 29.9127837,22 L39.0935437,22 C43.0403337,22.0588384 46.3527008,24.9968079 46.8897425,28.9149928 C47.4267843,32.8331777 45.027519,36.5570769 41.2426784,37.6797999 L41.2376851,37.6797999 Z" opacity=".75"/>
+        </g>
+      </svg>
+    </button>
+    <div class="live-chat-tooltip">
+      <strong>LinkedIn</strong><br />
+      
+    </div>
+  </div>   
+
+           <br><br><br>
+            <section class="footer">
+                <p>Copyright &copy; 2021. Design: <a href="" target="_blank">Propellex Solution</a> </p>
+            </section>
+        </div>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Fancybox -->
+<script src='https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js'></script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        function Home() {
+          location.replace("index.html")
+          }
+        function Pudlo() {
+          location.replace("about.html#pudlo")
+          }
+  
+        function Featured() {
+          location.replace("about.html#featured")
+        }
+        function Blog() {
+          location.replace("about.html#blog")
+        }
+        function Featured1() {
+          location.replace("about.html#featured1")
+        }
+        function Video() {
+          location.replace("product.html#video")
+          }
+  
+        function Performaince() {
+          location.replace("product.html#performaince")
+        }
+        function Application() {
+          location.replace("product.html#application")
+        }
+        function Downloads() {
+          location.replace("product.html#downloads")
+        }
+        
+        </script>
+
+    <script>
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // Make sure they scroll more than delta
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+    </script>
+
+    <script>
+    $('.sub-menu ul').hide();
+        $(".sub-menu a").click(function () {
+            $(this).parent(".sub-menu").children("ul").slideToggle("100");
+            $(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+        });</script>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+</body>
+</html>

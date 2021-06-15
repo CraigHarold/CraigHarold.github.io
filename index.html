@@ -1,47 +1,609 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Euro Konkrete</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Web and UI Developer">
-  <link rel="icon" type="image/x-icon" href="./assets/images/euro_logo.png">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="manifest" href="./manifest.json">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?libraries=places&sensor=false&&key=AIzaSyAe6I3Tp3ReyTU6lRC-ayDVsBaYB_3XsiQ"></script>
-  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe6I3Tp3ReyTU6lRC-ayDVsBaYB_3XsiQ
-  &callback=initMap" type="text/javascript"></script> -->
-</head>
-<body class="mat-typography">
-	
-	<script>
-		// Initialize and add the map
-		function initMap() {
-		  // The location of Uluru
-		  var uluru = {lat: -25.344, lng: 131.036};
-		  // The map, centered at Uluru
-		  var map = new google.maps.Map(
-			  document.getElementById('map'), {zoom: 4, center: uluru});
-		  // The marker, positioned at Uluru
-		  var marker = new google.maps.Marker({position: uluru, map: map});
-		}
-	</script>
-	<script>
-		(function () {
-		  // Retrieve the URL the user was trying to access when receiving the 404.
-		  var redirect = sessionStorage.redirect;
-		  // Remove the URL from sessionStorage.
-		  delete sessionStorage.redirect;
-		  // Check if we actually need to redirect.
-		  if (redirect && redirect != location.href) {
-			// We need to redirect to the URL the user was trying to access.
-			history.replaceState(null, null, redirect);
-		  }
-		})();
-	</script>
-  <app-root></app-root>
-<script src="runtime.js" defer></script><script src="polyfills.js" defer></script><script src="styles.js" defer></script><script src="scripts.js" defer></script><script src="vendor.js" defer></script><script src="main.js" defer></script></body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>EURO KONKRETE</title>
+        
+<!-- 
+
+Sentra Template
+
+http://www.templatemo.com/tm-518-sentra
+
+-->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,600i,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/certification.css"> 
+        <link rel="stylesheet" href="css/product.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css'> 
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        
+    </head>
+    <style>
+   
+
+h4{
+    text-align: center;
+}
+
+
+        </style>
+<body>
+
+
+        <header class="nav-down responsive-nav hidden-lg hidden-md">
+            <div class="logo">
+                <img src="img/euro_logo.png" alt="Responsive image" width="120px" >
+            </div>
+            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav" style="margin-left:120px;">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <!--/.navbar-header-->
+            <div id="main-nav" class="collapse navbar-collapse" style="margin-top:-60px;">
+                <nav>
+                    <ul  class="nav navbar-nav" >
+                        
+                        <li><a onclick="Home()" href='#'>Home Page</a></li>
+                        <li class='sub-menu'><a href='#message'>About Us <div class='fa fa-caret-down right'></div></a>
+                            <ul style="margin-left:-1px;">
+                                <li><a onclick="Pudlo()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>PME Group</a></li>
+                                <li><a onclick="Featured()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>PME Team</a></li>
+                                <li><a onclick="Blog()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>David Ball Group </a></li>
+                                <li><a onclick="Featured1()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>DBG Team</a></li>
+                          </ul>
+                        </li>
+                        <li class='sub-menu'><a href="#">Products<div class='fa fa-caret-down right'></div></a>
+                            <ul style="margin-left:-1px;">
+                                <li><a onclick="Video()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>What is Pudlo</a></li>
+                                <li><a onclick="Performaince()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Product Performance </a></li>
+                                <li><a onclick="Application()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Applications</a></li>
+                                <li><a onclick="Downloads()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Downloads</a></li>
+                            </ul>
+                        </li>
+                        <li class='sub-menu'><a href='#message'>Testimonials <div class='fa fa-caret-down right'></div></a>
+                            <ul style="margin-left:-1px;">
+                              <li><a onclick="Services()" href="#" style="font-size:18px;">Services</a></li>
+                              <li><a onclick="Certifications()" href="#" style="font-size:18px;">Certifications </a></li>
+                              <li><a onclick="Casestudys()" href="#" style="font-size:18px;">Case Studies</a></li>
+                            </ul>
+                        </li>
+                        
+                        
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div  class='animated bounceInDown'>
+        <div  class=" sidebar-navigation hidde-sm hidden-xs">
+            <div class="logo">
+                <img src="img/euro_logo.png" alt="" width="180px" class="ml-3 mt-10">
+            </div>
+            
+            <nav >
+                <ul>
+                    <li><a onclick="Home()" href='#'>Home Page</a></li>
+                    <li class='sub-menu'><a href='#message'>About Us <div class='fa fa-caret-down right'></div></a>
+                        <ul style="margin-left:-1px;">
+                            <li><a onclick="Pudlo()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>PME Group</a></li>
+                            <li><a onclick="Featured()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>PME Team</a></li>
+                            <li><a onclick="Blog()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>David Ball Group </a></li>
+                            <li><a onclick="Featured1()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>DBG Team</a></li>
+                      </ul>
+                    </li>
+                    <li class='sub-menu'><a href="#">Products<div class='fa fa-caret-down right'></div></a>
+                        <ul style="margin-left:-1px;">
+                            <li><a onclick="Video()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>What is Pudlo</a></li>
+                            <li><a onclick="Performaince()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Product Performance </a></li>
+                            <li><a onclick="Application()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Applications</a></li>
+                            <li><a onclick="Downloads()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Downloads</a></li>
+                        </ul>
+                    </li>
+                    <li class='sub-menu'><a href='#message'>Testimonials <div class='fa fa-caret-down right'></div></a>
+                        <ul style="margin-left:-1px;">
+                          <li><a onclick="Services()" href="#" style="font-size:18px;">Services</a></li>
+                          <li><a onclick="Certifications()" href="#" style="font-size:18px;">Certifications </a></li>
+                          <li><a onclick="Casestudys()" href="#" style="font-size:18px;">Case Studies</a></li>
+                        </ul>
+                    </li>
+            </nav>
+            
+        </div>
+    
+        <div class="slider">
+            <div class="Modern-Slider content-section" id="top">
+                <!-- Item -->
+                <div class="item item-1">
+                    <div class="img-fill">
+                    <div class="image"></div>
+                    <div class="info">
+                        <div>
+                          <h1 style="color:rgb(245, 14, 14);">Welcome to<br>Euro Konkrete</h1>
+                          <!-- <p >Distributors of PUDLO CWP.</p> -->
+                          <div class="white-button button">
+                              <a href="#featured">Discover More</a>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Item -->
+                <!-- Item -->
+                <div class="item item-2">
+                    <div class="img-fill">
+                        <div class="image"></div>
+                        <div class="info">
+                        <div>
+                          <h1 style="color:rgb(43, 7, 247);">Welcome to<br>Euro Konkrete</h1>
+                          <!-- <p style="color:rgb(243, 207, 3);">Distributors of PUDLO CWP.</p> -->
+                          
+                          <div class="white-button button">
+                              <a href="#featured">Discover More</a>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Item -->
+                <!-- Item -->
+                <div class="item item-3">
+                    <div class="img-fill">
+                        <div class="image"></div>
+                        <div class="info">
+                        <div>
+                          <h1 style="color:rgb(253, 237, 4);">Welcome to<br>Euro Konkrete</h1>
+                          <!-- <p style="color:rgb(245, 14, 14);">Distributors of PUDLO CWP.</p> -->
+                          <div class="white-button button">
+                              <a href="#featured">Discover More</a>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Item -->
+            </div>
+        </div>
+<!------------------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------------------------------------------------------->
+<div class="page-content">  
+           
+<!---------------------------------------------------------------------->
+<section id="about" class="content-section">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="section-heading">
+                <h1>   <em> EURO KONKRETE BUILDING DYNAMICS LLC.</em></h1>
+               
+            </div>
+            <div class="col-md-4"> <img src="img/co1.jpg" alt="" style="margin:auto;display: block;"></div>
+            <div class="col-md-8">
+                <p>Euro Konkrete prides itself on the diverse portfolio of waterproofing solutions, providing its customers
+                    with the most competitive price while maintaining high quality and reliability that they all come to
+                    expect</p>
+                <p>Euro Konkrete Building Dynamics LLC., is an offshoot of Pudlo Middle East Building Materials LLC.,
+                    (PME) which was part of the DB (Holdings) Group Limited, UK, after PME decided to shut down their
+                    middle east operations effective 30th June 2020, unable to sustain the losses owing to the
+                    pandemic and envisaging further losses in the coming months. The entire present team at Euro
+                    Konkrete was part of PME right from Regional Director / General Manager Mr. Harold Solomon to
+                    all other staff and have retained the same office, warehouse and communication lines as that of
+                    Pudlo Middle East. (www.pudlo.ae)</p>
+                    <p>Euro Konkrete are now the authorized promoters of waterproof concrete admixture PUDLO CWP
+                        and with this newly floated business entity is poised to take forward the business to retain and
+                        capitalize on this well established brand in the UAE present in this part of the region for the past
+                        more than 20 years.</p>  
+               </div>
+        </div>
+        <div class="col-md-12">
+            <div class="box-video">
+                <div class="bg-video" >
+                    <div class="bt-play"></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!---------------------------------------------------------------------------->
+<!--------------------------------------------------------->
+            <section id="projects" class="content-section">
+                <div class="section-heading">
+                    <h1> <em>VARIOUS  PROJECTS</em></h1>
+                </div>
+                <div class="section-content">
+                    <div class="masonry">
+                        <div class="row">
+                            <div class="item">
+                                <div class="col-md-8">
+                                    <a href="img/p5.jpg" data-lightbox="image"><img src="img/p5.jpg" alt="image 1"></a>
+                                </div>
+                            </div>
+                            <div class="item second-item">
+                                <div class="col-md-4">
+                                    <a href="img/p2.jpg" data-lightbox="image"><img src="img/p2.jpg" alt="image 2"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a href="img/p3.jpg" data-lightbox="image"><img src="img/p3.jpg" alt="image 3"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-6">
+                                    <a href="img/p6.jpg" data-lightbox="image"><img src="img/p6.jpg" alt="image 4"></a>
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <div class="col-md-6">
+                                    <a href="img/p1.jpg" data-lightbox="image"><img src="img/p1.jpg" alt="image 5"></a>
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <div class="col-md-5">
+                                    <a href="img/p8.jpg" data-lightbox="image"><img src="img/p8.jpg" alt="image 7"></a>
+                                </div>
+                                <div class="item">
+                                    <div class="col-md-7">
+                                        <a href="img/p9.jpg" data-lightbox="image"><img src="img/p9.jpg" alt="image 8"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+<!-------------------------------------------------------------------------------------->
+
+<section id="blog" class="content-section">
+    <div class="section-heading">
+        <h1>OUR <em>STORY</em></h1>
+        
+    </div>
+    <div class="section-content">
+        <div class="tabs-content">
+            <div class="wrapper">
+                <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                  <li style="width: 20%;"><a href="#tab1" class="active">Who We Are</a></li>
+                  <li style="width: 20%;"><a href="#tab2"> Durability </a></li>
+                  <li style="width: 20%;"><a href="#tab3">Our Passion </a></li>
+                  <li style="width: 20%;"><a href="#tab4">Our Commitment </a></li>
+                  <li style="width: 20%;"><a href="#tab5">Our Expertise </a></li>
+                </ul>
+                <section id="first-tab-group" class="tabgroup">
+                    <div id="tab1">
+                        <ul>
+                           
+                            <li>
+                                <div class="item">
+                                    <img src="img/blog_3.jpg" alt="">
+                                    <div class="text-content">
+                                        <h4>Who We Are</h4>
+                                        <span></span>
+                                        <p>PUDLO Middle East Building Materials LLC is solely owned by David Ball Group Ltd,
+                                            UK. David Ball Group is the manufacturer and distributor of PUDLO CWP waterproof
+                                            admixture.</p>
+                                        <p>PUDLO is an innovation-led construction material manufacturer at the forefront of the
+                                            quest for innovative products and construction techniques, committed to developing
+                                            new products which minimizes the impact on the environment and improve working
+                                            practices</p>
+                                            <p>Our vision is to be the leading manufacturer of innovative concrete products that will
+                                                improve the way the construction industry works with a bespoke service and specialist
+                                                products. Through its knowledge and the passion and commitment of its employees,
+                                                PUDLO Middle East is able to offer outstanding service and expertise to provide
+                                                complete solutions to satisfy customer’s needs.
+                                            </p>
+                                            <p>PUDLO has been used extensively throughout the Middle East for the last 15 years and
+                                                is trusted as the most durable, waterproof concrete available. Strategically located in
+                                                Dubai, PUDLO is always ready to provide technical expert advice and assistance when
+                                                it is needed and fast delivery throughout the Middle East is guaranteed.</p>
+                                        <div class="accent-button button">
+                                            <a href="#contact">Continue Reading</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tab2">
+                        <ul>
+                            <li>
+                                <div class="item">
+                                    <img src="img/blog_3.jpg" alt="">
+                                    <div class="text-content">
+                                        <h4>Pioneering Waterproof Concrete and Durability</h4>
+                                        <span></span>
+                                        <p>In the 1990s, the performance of integrally waterproof concrete was taken to a new
+                                            level by David Ball Group ltd as it reformulated PUDLO, the world’s first commercial
+                                            concrete waterproofing admixture introduced 140 years ago. Re-engineered around
+                                            modern architectural needs, its enhanced capabilities came with the first – and still
+                                            unmatched – guarantee of the completed concrete structure.</p>
+                                        <p>From PUDLO’s early use in the pioneering sanitation systems of Victorian London, its
+                                            success story continues at the cutting edge in projects like London’s Crossrail and the
+                                            celebrated Dubai Fountains</p>
+                                        <div class="accent-button button">
+                                            <a href="#contact">Continue Reading</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div id="tab3">
+                        <ul>
+                            <li>
+                                <div class="item">
+                                    <img src="img/blog_2.jpg" alt="">
+                                    <div class="text-content">
+                                        <h4>Concrete Innovation is Our Passion</h4>
+                                        <span></span>
+                                        <p>Research & Development is at the heart of what the Group does, harnessing the power
+                                            of chemistry to enhance the long-term performance of built structures with a dynamic
+                                            brand portfolio.</p>
+                                        <p>A major milestone in this sustainable legacy is Cemfree, a totally cement free
+                                            alternative to conventional concrete and a ground-breaking addition to David Ball
+                                            Group ltd’s portfolio. With the ability to produce structural concrete without the use of
+                                            Portland cement, this revolutionary material is the result of years of dedicated
+                                            development by the Group’s research scientists.</p>
+                                        
+                                        <div class="accent-button button">
+                                            <a href="#contact">Continue Reading</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div id="tab4">
+                        <ul>
+                            <li>
+                                <div class="item">
+                                    <img src="img/blog_1.jpg" alt="">
+                                    <div class="text-content">
+                                        <h4>Sustainable Development is Our Commitment</h4>
+                                        <span></span>
+                                        <p>While being the world’s most used building material, modern concrete is not
+                                            considered as one of the most sustainable solutions. Today’s cement and concrete
+                                            industries have a consistently impressive record for carbon reduction marshalled by a
+                                            strong commitment to their environmental responsibilities. By enhancing service life
+                                            of the building structures, PUDLO provides the real contribution towards
+                                            environmental capability.</p>
+                                        
+                                        <div class="accent-button button">
+                                            <a href="#contact">Continue Reading</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>                                
+                           
+                        </ul>
+                    </div>
+                    <div id="tab5">
+                        <ul>
+                            <li>
+                                <div class="item">
+                                    <img src="img/blog_1.jpg" alt="">
+                                    <div class="text-content">
+                                        <h4>Engineered Materials are Our Expertise</h4>
+                                        <span></span>
+                                        <p>For almost half a century, David Ball Specialist Sands has set the bar in the
+                                            preparation and supply of British standard and unique, ultra-high quality sands for
+                                            process testing and manufacturing. Quality that has travelled worldwide to meet the
+                                            most exacting applications.
+                                            </p>
+                                        <p>Pudlo Middle East Building Materials LLC., (PME) which was part of the DB
+                                            (Holdings) Group Limited, UK decided to shut down their middle east operations
+                                            effective 30th June 2020, unable to sustain the losses owing to the pandemic and
+                                            envisaging further losses in the coming months and Euro Konkrete Building
+                                            Dynamics LLC., is now the authorized promoter of PME products in the Middle East
+                                            region of UAE, Saudi Arabia, Oman, Kuwait, Bahrain, Qatar Etc.,</p>
+                                        <div class="accent-button button">
+                                            <a href="#contact">Continue Reading</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>                                
+                            
+                               
+                        </ul>
+                    </div>
+                </section> 
+            </div>
+        </div>
+    </div>
+</section>
+<!----------------------------------------------------------------------------->            
+        <section id="contact" class="content-section">
+                <div id="map">
+                   
+                	<!-- How to change your own map point
+                           1. Go to Google Maps
+                           2. Click on your location point
+                           3. Click "Share" and choose "Embed map" tab
+                           4. Copy only URL and paste it within the src="" field below
+                    -->
+                   
+                </div>
+                <div id="contact-content">
+                    <div class="section-heading">
+                        <h1><em>Contact Us</em></h1>
+                    </div>
+                    <div class="section-content">
+                       
+                            
+                        <div class="row">
+                            <div class="col-md-7">
+                                <fieldset>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.921292420081!2d55.16506901500569!3d25.00279028398693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6d5e119c90e7%3A0x638f33c470829a63!2sEuro%20Konkrete%20Building%20Dynamics%20LLC!5e0!3m2!1sen!2sin!4v1612951940640!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </fieldset>
+                            </div>
+                   
+                    <div class="col-md-5">
+                        <h4><b>Office:</b></h4>
+                       <p> EuroKonkrete Building Dynamics LLC
+                        Unit 501, Level 5
+                        ARENCO Office Building 4
+                        Dubai Investment Park (DIP) 1, Dubai</p>
+                        <p> <b> Tel:</b> +971 4 88 77 023</p>
+                        <p> <b>Mobile:</b> +971 50 777 3102 </p>
+                        <p> <b>Email:</b> sales@eurokonkrete.com</p>
+                   
+                    <h4><b>Warehouse:</b></h4>
+                       <p> EuroKonkrete Building Dynamics LLC
+                        Dubai Investment Park (DIP) 2,
+                        Plot No. 15, Makani No. 1698763726
+                        Warehouse Property No. 15
+                        Dubai, UAE
+                        </p>
+                        <h4><b>Partner Office:</b></h4>
+                        <p>  DB (Holdings) Group Ltd
+                            Wellington Way
+                            Bourn
+                            CB23 2TQ</p>
+                        <p>  Website: www.pudlo.ae</p>
+                         </div>
+                      </div>
+                    </div>
+                </div>
+            </section><br>
+
+            <div class="live-chat-widget">
+                <button class="live-chat-button" href="#">
+                    <img src="img/linkedin.png" alt="Responsive image" width="80px" >
+                    <g>
+                      <path d="M19.6906034,42 L16.0186034,42 L16.0186034,38.191 C16.8225403,39.8075313 18.1045912,41.1374148 19.6906034,42 L19.6906034,42 Z M32.8906034,28.823 L24.1056034,28.823 C21.2769557,28.8623314 19.0045252,31.1665788 19.0045252,33.9955 C19.0045252,36.8244212 21.2769557,39.1286686 24.1056034,39.168 L32.8906034,39.168 C35.7192772,39.1297774 37.9926152,36.8264042 37.993709,33.9974724 C37.9948028,31.1685406 35.7232468,28.86341 32.8946034,28.823 L32.8906034,28.823 Z M33.0956034,41.987 L23.9026034,41.987 C19.5238896,41.9380177 16,38.3744878 16,33.9955 C16,29.6165122 19.5238896,26.0529823 23.9026034,26.004 L33.0956034,26.004 C37.4743172,26.0529823 40.9982068,29.6165122 40.9982068,33.9955 C40.9982068,38.3744878 37.4743172,41.9380177 33.0956034,41.987 L33.0956034,41.987 L33.0956034,41.987 Z"/>
+                      <path d="M43.3348891,38 L47.002,38 L47.002,34.1886179 C46.1991335,35.8061602 44.9187896,37.1368753 43.3348891,38 Z M41.2376851,37.6797999 C41.736668,36.5164423 41.9948731,35.2637362 41.9966732,33.9974984 C42.1202003,29.1577393 38.308152,25.1322451 33.4780304,25.0018762 L23.75,25.0018762 C25.2367988,23.1081124 27.5080185,22.0018071 29.9127837,22 L39.0935437,22 C43.0403337,22.0588384 46.3527008,24.9968079 46.8897425,28.9149928 C47.4267843,32.8331777 45.027519,36.5570769 41.2426784,37.6797999 L41.2376851,37.6797999 Z" opacity=".75"/>
+                    </g>
+                  </svg>
+                </button>
+                <div class="live-chat-tooltip">
+                  <strong>LinkedIn</strong><br />
+                  
+                </div>
+              </div>   
+            
+            <section class="footer">
+                <p>Copyright &copy; 2021. Design: <a href="" target="_blank">Propellex Solution</a> </p>
+            </section>
+        </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function Home() {
+          location.replace("index.html")
+          }
+        function Pudlo() {
+          location.replace("about.html#pudlo")
+          }
+  
+        function Featured() {
+          location.replace("about.html#featured")
+        }
+        function Blog() {
+          location.replace("about.html#blog")
+        }
+        function Featured1() {
+          location.replace("about.html#featured1")
+        }
+        function Video() {
+          location.replace("product.html#video")
+          }
+  
+        function Performaince() {
+          location.replace("product.html#performaince")
+        }
+        function Application() {
+          location.replace("product.html#application")
+        }
+        function Downloads() {
+          location.replace("product.html#downloads")
+        }
+        function Services() {
+          location.replace("Certification.html#services")
+        }
+        function Certifications() {
+          location.replace("Certification.html#certifications")
+        }
+        function Casestudys() {
+          location.replace("Certification.html#casestudys")
+        }
+        </script>
+    <script>
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // Make sure they scroll more than delta
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+    </script>
+ <script>
+    $('.sub-menu ul').hide();
+        $(".sub-menu a").click(function () {
+            $(this).parent(".sub-menu").children("ul").slideToggle("100");
+            $(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+        });</script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+</body>
 </html>
