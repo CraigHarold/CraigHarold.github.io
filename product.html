@@ -32,55 +32,7 @@ http://www.templatemo.com/tm-518-sentra
         
     </head>
     <style>
-.separator {
-  bottom: -4px;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
 
-  width: 100%;
-}
-/* -------------------------------------------------------------------------
-   begin Separator
- * ------------------------------------------------------------------------- */
- 
-
- 
- .separator {
-  bottom: -34px;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-}
-.separator1 {
-  bottom: -64px;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-}
-/* -------------------------------------------------------------------------
-   end Separator
- * ------------------------------------------------------------------------- */
-
-/* begin Media Max-Width 767
-============================================================================ */
-
-@media screen and (max-width: 767px) {
-  .section-one {
-    padding: 130px 0 190px;
-  }
-  .separator {
-    bottom: -110px;
-    .separator__svg {
-      left: -20%;
-      position: relative;
-      transform: rotate(15deg);
-      width: 140%;
-    }
-  }
-}
         </style>
 <body>
 
@@ -101,16 +53,18 @@ http://www.templatemo.com/tm-518-sentra
                 <ul  class="nav navbar-nav" >
                     
                   <li><a onclick="Home()" href='#'>Home Page</a></li>
+                  
                   <li class='sub-menu'><a href='#message'>About Us <div class='fa fa-caret-down right'></div></a>
-                      <ul style="margin-left:-1px;">
+                      <ul >
+                          <li><a onclick="About()" href="#" style="font-size:18px;">History</a></li>
                           <li><a onclick="Pudlo()" href="#" style="font-size:18px;">PME Group</a></li>
                           <li><a onclick="Featured()" href="#" style="font-size:18px;">PME Team</a></li>
                           <li><a onclick="Blog()" href="#" style="font-size:18px;">David Ball Group </a></li>
-                          <li><a onclick="Featured1()" href="#" style="font-size:18px;">DBG Team</a></li>
+                          <!-- <li><a onclick="Featured1()" href="#" style="font-size:18px;">DBG Team</a></li> -->
                     </ul>
                   </li>
                   <li class='sub-menu'><a href='#'>Products <div class='fa fa-caret-down right'></div></a>
-                      <ul style="margin-left:-1px;">
+                      <ul >
                           <li><a href="#video" style="font-size:18px;">What is Pudlo</a></li>
                           <li><a href="#performaince" style="font-size:18px;">Product Performance </a></li>
                           <li><a href="#application" style="font-size:18px;">Applications</a></li>
@@ -118,7 +72,7 @@ http://www.templatemo.com/tm-518-sentra
                       </ul>
                   </li>
                   <li class='sub-menu'><a href='#message'>Testimonials <div class='fa fa-caret-down right'></div></a>
-                      <ul style="margin-left:-1px;">
+                      <ul >
                         <li><a onclick="Services()" href="#" style="font-size:18px;">Services</a></li>
                         <li><a onclick="Certifications()" href="#" style="font-size:18px;">Certifications </a></li>
                         <li><a onclick="Casestudys()" href="#" style="font-size:18px;">Case Studies</a></li>
@@ -133,34 +87,35 @@ http://www.templatemo.com/tm-518-sentra
     <header class='animated bounceInDown'>
     <div  class=" sidebar-navigation hidde-sm hidden-xs">
         <div class="logo">
-            <img src="img/euro_logo.png" alt="" width="180px" class="ml-3 mt-10">
+            <img src="img/euro_logo.png" alt="" width="80%" class="ml-3 mt-10">
         </div>
         
         <nav >
-            <ul>
+            <ul class="scrollbar" id="style-1">
                 <li><a onclick="Home()" href='#'>Home Page</a></li>
-                <li class='sub-menu'><a href='#message'>About Us <div class='fa fa-caret-down right'></div></a>
-                    <ul style="margin-left:-1px;">
+                <li class='sub-menu'><a href='#message' onclick="About()">About Us <div class='fa'></div></a>
+                    <!-- <ul >
+                        <li><a onclick="About()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>History</a></li>
                         <li><a onclick="Pudlo()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>PME Group</a></li>
                         <li><a onclick="Featured()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>PME Team</a></li>
                         <li><a onclick="Blog()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>David Ball Group </a></li>
                         <li><a onclick="Featured1()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>DBG Team</a></li>
-                  </ul>
+                  </ul> -->
                 </li>
-                <li class='sub-menu'><a href='#'>Products <div class='fa fa-caret-down right'></div></a>
-                    <ul style="margin-left:-1px;">
+                <li ><a href='#'>Products <div class='fa fa-caret-down right'></div></a>
+                    <ul >
                         <li><a href="#video" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>What is Pudlo</a></li>
                         <li><a href="#performaince" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Product Performance </a></li>
                         <li><a href="#application" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Applications</a></li>
                         <li><a href="#downloads" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Downloads</a></li>
                     </ul>
                 </li>
-                <li class='sub-menu'><a href='#message'>Testimonials <div class='fa fa-caret-down right'></div></a>
-                    <ul style="margin-left:-1px;">
+                <li class='sub-menu'><a href='#message' onclick="Services()">Testimonials <div class='fa'></div></a>
+                    <!-- <ul >
                       <li><a onclick="Services()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Services</a></li>
                       <li><a onclick="Certifications()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Certifications </a></li>
                       <li><a onclick="Casestudys()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Case Studies</a></li>
-                    </ul>
+                    </ul> -->
                 </li>
         </nav>
         
@@ -170,7 +125,7 @@ http://www.templatemo.com/tm-518-sentra
 <div class="page-content">
 
   <div class="w-100">
-      <div class="row " style="background-image: url('img/Slide3.jpg');height:300px;margin-left:-9px;" >
+      <div class="row " style="background-image: url('img/Slide3.jpg');height:300px;margin-left:-2px;background-size: cover;" >
           <hr class="new5" style="margin-left:50px;margin-top:120px;" >
       <h1 class="page-head-text"> Product</h1>
   </div>  </div>      
@@ -205,16 +160,9 @@ http://www.templatemo.com/tm-518-sentra
                 <br> </div>
             </div>
         </div> 
-        <div class="separator">
-          <svg class="separator__svg" width="100%" height="30" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#44A36F" version="1.1" xmlns="http://www.w3.org/2000/svg" >
-             <path d="M 100 100 V 10 L 0 100"/>
-             <path d="M 30 73 L 100 18 V 10 Z" fill="#308355" stroke-width="0"/>
-            </svg>
-            <div style="height:30px; background: linear-gradient(#44A36F, white);margin-top:-6px;">
-            </div>
-        </div>
+       
         
-    </section>
+    </section><hr>
     
 <!------------------------------------------------------------------------------------------------------------------>
 <section id="performaince" class="content-section" >
@@ -279,15 +227,8 @@ http://www.templatemo.com/tm-518-sentra
           </div>
           </div>
       </div>
-      <div class="separator1">
-        <svg class="separator__svg" width="100%" height="30" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#44A36F" version="1.1" xmlns="http://www.w3.org/2000/svg" >
-           <path d="M 100 100 V 10 L 0 100"/>
-           <path d="M 30 73 L 100 18 V 10 Z" fill="#308355" stroke-width="0"/>
-          </svg>
-          <div style="height:30px; background: linear-gradient(#44A36F, white);margin-top:-6px;">
-          </div>
-      </div>
-</section>
+      
+</section><hr>
 
 <!------------------------------------------------------------------------>
     <section  class="content-section"style="margin-top:35px;" >
@@ -315,15 +256,8 @@ http://www.templatemo.com/tm-518-sentra
                     </div>
                 </div>
             </div>
-            <div class="separator">
-              <svg class="separator__svg" width="100%" height="30" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#44A36F" version="1.1" xmlns="http://www.w3.org/2000/svg" >
-                 <path d="M 100 100 V 10 L 0 100"/>
-                 <path d="M 30 73 L 100 18 V 10 Z" fill="#308355" stroke-width="0"/>
-                </svg>
-                <div style="height:30px; background: linear-gradient(#44A36F, white);margin-top:-6px;">
-                </div>
-            </div>
-        </section>
+            
+        </section><hr>
     
 <!--------------------------------------------------------------------------------------->
 <section  id="application" class="content-section" >
@@ -387,7 +321,7 @@ http://www.templatemo.com/tm-518-sentra
     </div>
   </div>
   </section>
-  <br><br>
+  <br><br><hr>
 <!-------------------------------------------------------------------------------------->
 <section id="downloads" class="" >
     <div class="section-heading">
@@ -444,6 +378,9 @@ http://www.templatemo.com/tm-518-sentra
        function Home() {
           location.replace("index.html")
           }
+      function About() {
+        location.replace("about.html#about")
+        }
       function Pudlo() {
         location.replace("about.html#pudlo")
         }

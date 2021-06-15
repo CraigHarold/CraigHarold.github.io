@@ -131,8 +131,9 @@
   
   hr.new5 {
     width:10%;
-    /* height:2px; */
+    height:2px;
     border-top: 3px solid #eee;
+    border-bottom: none;
   }
   
   hr.new6 {
@@ -144,8 +145,16 @@
   
   nav {
       position: relative;
-      margin: 50px;
-      width: 360px;
+      text-align: center;
+      /* margin-left: 10%; */
+      /* width: 360px; */
+  }
+
+  @media (max-width: 750px) {
+    nav {
+      margin-left: 0;
+      margin-top: 58px;
+    }
   }
   nav ul {
       list-style: none;
@@ -160,11 +169,11 @@
      
       color: #333;
       text-decoration: none;
-      -webkit-transition: 0.2s linear;
-      -moz-transition: 0.2s linear;
-      -ms-transition: 0.2s linear;
-      -o-transition: 0.2s linear;
-      transition: 0.2s linear;
+      -webkit-transition: 0.1s linear;
+      -moz-transition: 0.1s linear;
+      -ms-transition: 0.1s linear;
+      -o-transition: 0.1s linear;
+      transition: 0.1s linear;
   }
   nav ul li a:hover {
       
@@ -192,4 +201,39 @@
      /* border-left: 4px solid #3498db;*/
   }
   
+  hr {
+    border:none;
+    height: 20px;
+     width: 80%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+   /* margin: -50px auto 10px; */
+  }
+  
+  
+  .scrollbar
+  {
+    /* height: 420px; */
+    width: 100%;
+    overflow-y: scroll;
+    margin: 0 auto 100px auto;
+  }
+  
+  #style-1::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  #style-1::-webkit-scrollbar-track
+  {
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.24);
+  }
+  
+  #style-1::-webkit-scrollbar-thumb
+  {
+    border-radius: 8px;
+    background-color: #FDD663;
+  }
   

@@ -29,105 +29,74 @@ http://www.templatemo.com/tm-518-sentra
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            #about .img-fluid {
+                width:80%;
+                margin-left: 10%;
+            }
+
+            /* Float four columns side by side */
+            .column {
+            float: left;
+            width: 33%;
+            padding: 0 10px;
+            }
+    
+            .row {
+                margin:0;
+            }
+    
+    
+            /* Clear floats after the columns */
+            .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+    
+            /* Responsive columns */
+            @media screen and (max-width: 600px) {
+                .column {
+                    width: 100%;
+                    display: block;
+                    margin-bottom: 20px;
+                }
+            }
+    
+            /* Style the counter cards */
+            .card {
+            box-shadow: 0 4px 8px 0 rgba(85, 5, 5, 0.705);
+            padding: 16px;
+            text-align: center;
+            color:rgb(0, 0, 0);
+            border-radius: 25px;
+            background-color: #ffffff;
+            }
+            .card1 {
+                box-shadow: 0 4px 8px 0 rgba(85, 5, 5, 0.705);
+                padding: 16px;
+                text-align: center;
+                color:#080808;
+                border-radius: 25px;
+                background-color: #ffffff;
+            }
+            .card2 {
+                box-shadow: 0 4px 8px 0 rgba(85, 5, 5, 0.705);
+                padding: 16px;
+                text-align: center;
+                border-radius: 25px;
+                color:#0c0c0c;
+                background-color: #ffffff;
+            }
+        </style>
+
         
     </head>
-    <style>
-    * {
-  box-sizing: border-box;
-}
-
-
-
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 33%;
-  padding: 0 10px;
-}
-
-.row {
-    margin:0;
-}
-
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(85, 5, 5, 0.705);
-  padding: 16px;
-  text-align: center;
-  color:rgb(0, 0, 0);
-  border-radius: 25px;
-  background-color: #ffffff;
-}
-.card1 {
-    box-shadow: 0 4px 8px 0 rgba(85, 5, 5, 0.705);
-    padding: 16px;
-    text-align: center;
-    color:#080808;
-    border-radius: 25px;
-    background-color: #ffffff;
-  }
-  .card2 {
-    box-shadow: 0 4px 8px 0 rgba(85, 5, 5, 0.705);
-    padding: 16px;
-    text-align: center;
-    border-radius: 25px;
-    color:#0c0c0c;
-    background-color: #ffffff;
-  }
-
-/* -------------------------------------------------------------------------
-   begin Separator
- * ------------------------------------------------------------------------- */
- 
- 
-.separator {
-    padding-top: 40px;
-    overflow: hidden;
-    display: block;
-    width: 100%;
-}
-/* -------------------------------------------------------------------------
-   end Separator
- * ------------------------------------------------------------------------- */
-
-/* begin Media Max-Width 767
-============================================================================ */
-
-@media screen and (max-width: 767px) {
-  .section-one {
-    padding: 130px 0 190px;
-  }
-  .separator {
-    bottom: -110px;
-    .separator__svg {
-      left: -20%;
-      position: relative;
-      transform: rotate(15deg);
-      width: 140%;
-    }
-  }
-}
-
-/* end Media Max-Width 767
-============================================================================ */
-        </style>
+    
 <body>
 
 
@@ -149,15 +118,15 @@ http://www.templatemo.com/tm-518-sentra
                         
                         <li><a onclick="Home()" href='#'>Home Page</a></li>
                         <li class='sub-menu'><a href='#about.html'>About Us<div class='fa fa-caret-down right'></div></a>
-                            <ul style="margin-left:-1px;">
-                                        <li><a href="#pudlo" style="font-size:18px;">PME Group</a></li>
-                                        <li><a href="#featured" style="font-size:18px;">PME Team</a></li>
-                                        <li><a href="#blog" style="font-size:18px;">David Ball Group </a></li>
-                                        <li><a href="#featured1" style="font-size:18px;">DBG Team</a></li>
+                            <ul>
+                                <li><a href="#about" style="font-size:18px;">History</a></li>
+                                <li><a href="#pudlo" style="font-size:18px;">PME Group</a></li>
+                                <li><a href="#featured" style="font-size:18px;">PME Team</a></li>
+                                <li><a href="#blog" style="font-size:18px;">David Ball Group </a></li>
                             </ul>
                         </li>
                         <li class='sub-menu'><a href="#">Products<div class='fa fa-caret-down right'></div></a>
-                            <ul style="margin-left:-1px;">
+                            <ul>
                                 <li><a onclick="Video()" href="#" style="font-size:18px;">What is Pudlo</a></li>
                                 <li><a onclick="Performaince()" href="#" style="font-size:18px;">Product Performance </a></li>
                                 <li><a onclick="Application()" href="#" style="font-size:18px;">Applications</a></li>
@@ -165,11 +134,11 @@ http://www.templatemo.com/tm-518-sentra
                             </ul>
                         </li>
                         <li class='sub-menu'><a href='#message'>Testimonials<div class='fa fa-caret-down right'></div></a>
-                            <ul style="margin-left:-1px;">
+                            <ul>
                                 <li><a onclick="Services()" href="#" style="font-size:18px;">Services</a></li>
                                 <li><a onclick="Certifications()" href="#" style="font-size:18px;">Certifications </a></li>
                                 <li><a onclick="Casestudys()" href="#" style="font-size:18px;">Case Studies</a></li>
-                                  </ul>
+                            </ul>
                         </li>
                 </nav>
             </div>
@@ -177,34 +146,34 @@ http://www.templatemo.com/tm-518-sentra
         <header class='animated bounceInDown'>
         <div  class=" sidebar-navigation hidde-sm hidden-xs">
             <div class="logo">
-                <img src="img/euro_logo.png" alt="Euro_logo" width="250px">
+                <img src="img/euro_logo.png" alt="Euro_logo" width="80%">
             </div>
             
-            <nav >
-                <ul>
+            <nav>
+                <ul class="scrollbar" id="style-1">
                     <li><a onclick="Home()" href='#'>Home Page</a></li>
-                    <li class='sub-menu'><a href='#about.html'>About Us<div class='fa fa-caret-down right'></div></a>
-                        <ul style="margin-left:-1px;">
-                                    <li><a href="#pudlo" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>PME Group</a></li>
-                                    <li><a href="#featured" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>PME Team</a></li>
-                                    <li><a href="#blog" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>David Ball Group </a></li>
-                                    <li><a href="#featured1" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>DBG Team</a></li>
+                    <li ><a href='#about.html'>About Us<div class='fa fa-caret-down right'></div></a>
+                        <ul>
+                            <li><a href="#about" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>History</a></li>
+                            <li><a href="#pudlo" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>PME Group</a></li>
+                            <li><a href="#featured" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>PME Team</a></li>
+                            <li><a href="#blog" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>David Ball Group </a></li>
                         </ul>
                     </li>
-                    <li class='sub-menu'><a href="#">Products<div class='fa fa-caret-down right'></div></a>
-                        <ul style="margin-left:-1px;">
+                    <li class='sub-menu'><a onclick="Video()" href="#">Products<div class='fa'></div></a>
+                        <!-- <ul>
                             <li><a onclick="Video()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>What is Pudlo</a></li>
                             <li><a onclick="Performaince()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Product Performance </a></li>
                             <li><a onclick="Application()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Applications</a></li>
                             <li><a onclick="Downloads()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Downloads</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
-                    <li class='sub-menu'><a href='#message'>Testimonials<div class='fa fa-caret-down right'></div></a>
-                        <ul style="margin-left:-1px;">
+                    <li class='sub-menu'><a onclick="Services()" href='#message'>Testimonials<div class='fa'></div></a>
+                        <!-- <ul>
                             <li><a onclick="Services()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Services</a></li>
                             <li><a onclick="Certifications()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Certifications </a></li>
                             <li><a onclick="Casestudys()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>Case Studies</a></li>
-                              </ul>
+                        </ul> -->
                     </li>
             </nav>
             
@@ -214,7 +183,7 @@ http://www.templatemo.com/tm-518-sentra
 <div class="page-content">
 
     <div class="w-100">
-        <div class="row"style="background-image: url('img/Slide3.jpg');height:300px;" >
+        <div class="row"style="background-image: url('img/Slide3.jpg');height:300px;margin-left:-2px;background-size: cover;" >
             <hr class="new5" style="margin-left:50px;margin-top:120px;" >
             <h1 class="page-head-text">About Us</h1>
         </div>
@@ -222,17 +191,20 @@ http://www.templatemo.com/tm-518-sentra
 <section id="top"  class="content-section" >
     <div class="row" id="about"> 
         <div class="col-md-12">
-            <div class="col-md-5" ><img src="img/about.jpg" class="img-fluid" alt="Responsive image" style="width:80%;margin-left: 10%;"></div>
-           
+            <div class="section-heading" >
+                <h1><em style="font-family:'Poppins';">HISTORY</em></h1>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            
+            <div class="col-md-5" ><img src="img/about.jpg" class="img-fluid" alt="Historical image"></div>
+            
             <div class="col-md-7" >
                 
-                <div class="section-heading" >
-                  
-                    <h1><em style="font-family:'Poppins';">HISTORY</em></h1>
-                    
-                </div>
+                
                 <div class="mt-4" >
-                <p><b>PUDLO – Part of a Quality Driven Heritage</b></p>
+                <p style="color: #3f669c;"><b>Part of a Quality Driven Heritage</b></p>
                 <p><b>PUDLO waterproof systems is part of David Ball Group, a leading specialist in high quality sands and cementitious materials for industry, quality testing and construction. </b></p>
                 <p>Founding business, David Ball Specialist Sands, is a global market leader in ultra-high quality British Standard Reference and industrial process sands, exported worldwide for over 45 years. David Ball Group <b>PS Range </b>manufactures waterproof coatings and sealants to complement the PUDLO integral waterproofing system and for other concrete applications. </p>
                 </div>
@@ -274,17 +246,9 @@ http://www.templatemo.com/tm-518-sentra
         <q style="font-size: 18px;"><b>Wherever concrete is at the cutting edge, PUDLO is at the heart of it – tall buildings, record-breaking fountains and riverside basements, green roofs, high temperature waste reactors and tsunami research facilities.</b></q>
         <p>As the world’s most advanced and robustly assured system of intrinsically waterproof concrete, PUDLO continues to evolve and facilitate the engineering vision of 21st century construction.</p>
         </div>
-        
-    <div class="separator">
-        <svg class="separator__svg" width="100%" height="30" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#44A36F" version="1.1" xmlns="http://www.w3.org/2000/svg" >
-           <path d="M 100 100 V 10 L 0 100"/>
-           <path d="M 30 73 L 100 18 V 10 Z" fill="#308355" stroke-width="0"/>
-          </svg>
-          <div style="height:30px; background: linear-gradient(#44A36F, white);margin-top:-6px;">
-          </div>
-      </div> </div>
+       
 </section>
-
+<hr>
 <!--------------------------------------------------------------------------------------->
 <section id="pudlo"  class="content-section" >
     
@@ -313,20 +277,13 @@ http://www.templatemo.com/tm-518-sentra
                     </div>
                 </div>
             </div>
-            <div class="separator">
-                <svg class="separator__svg" width="100%" height="30" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#44A36F" version="1.1" xmlns="http://www.w3.org/2000/svg" >
-                   <path d="M 100 100 V 10 L 0 100"/>
-                   <path d="M 30 73 L 100 18 V 10 Z" fill="#308355" stroke-width="0"/>
-                  </svg>
-                  <div style="height:30px; background: linear-gradient(#44A36F, white);margin-top:-6px;">
-                  </div>
-              </div>
+            
         </div>
         
-    </section>
+    </section><hr>
 <!---------------------------------------------------------------------------------------->
 <section id="featured"  class="content-section"  >
-    <div class="section-heading">
+    <div class="section-heading" style="margin-right: -4px;">
         <h1><em > PME TEAM </em></h1>
     </div>
     <div class="section-content">
@@ -389,18 +346,8 @@ http://www.templatemo.com/tm-518-sentra
             </div>
         </div>
     </div>
-    <div class="separator">
-        <svg class="separator__svg" width="100%" height="30" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#44A36F" version="1.1" xmlns="http://www.w3.org/2000/svg" >
-           <path d="M 100 100 V 10 L 0 100"/>
-           <path d="M 30 73 L 100 18 V 10 Z" fill="#308355" stroke-width="0"/>
-          </svg>
-          <div style="height:30px; background: linear-gradient(#44A36F, white);margin-top:-6px;">
-          </div>
-      </div>
-</section>        
-
-
-
+    
+</section> <hr>       
 
 
 
@@ -506,15 +453,8 @@ http://www.templatemo.com/tm-518-sentra
             </div>
         </div>
     </div>
-    <div class="separator">
-        <svg class="separator__svg" width="100%" height="30" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#44A36F" version="1.1" xmlns="http://www.w3.org/2000/svg" >
-           <path d="M 100 100 V 10 L 0 100"/>
-           <path d="M 30 73 L 100 18 V 10 Z" fill="#308355" stroke-width="0"/>
-          </svg>
-          <div style="height:30px; background: linear-gradient(#44A36F, white);margin-top:-6px;">
-          </div>
-      </div>
-</section>
+    
+</section><hr>
 <!------------------------------------------------------------------------>
 <section id="featured1" class="content-section"  >
     <div class="section-heading">
@@ -576,15 +516,8 @@ http://www.templatemo.com/tm-518-sentra
             </div>
         </div>
     </div>
-    <div class="separator">
-        <svg class="separator__svg" width="100%" height="30" viewBox="0 0 100 100" preserveAspectRatio="none" fill="#44A36F" version="1.1" xmlns="http://www.w3.org/2000/svg" >
-           <path d="M 100 100 V 10 L 0 100"/>
-           <path d="M 30 73 L 100 18 V 10 Z" fill="#308355" stroke-width="0"/>
-          </svg>
-          <div style="height:30px; background: linear-gradient(#44A36F, white);margin-top:-6px;">
-          </div>
-      </div>
-</section> 
+    
+</section> <hr>
 
         
 <!------------------------------------------------------------------------>
@@ -665,7 +598,7 @@ http://www.templatemo.com/tm-518-sentra
         function Casestudys() {
           location.replace("Certification.html#casestudys")
         }
-        </script>
+    </script>
 
     <script>
         // Hide Header on on scroll down
